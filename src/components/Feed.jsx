@@ -6,7 +6,7 @@ import { fetchData } from "../utils/api";
 
 const Feed = () => {
   const [videos, setVideos] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [selectedCategory, setSelectedCategory] = useState("Pewdiepie");
 
   useEffect(() => {
     fetchData(`search?part=snippet&q=${selectedCategory}`).then((data) => {

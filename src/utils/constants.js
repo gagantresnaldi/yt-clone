@@ -1,4 +1,5 @@
 import VideoLibrary from "@mui/icons-material/VideoLibrary";
+import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 import CodeIcon from "@mui/icons-material/Code";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import DevicesOther from "@mui/icons-material/DevicesOther";
@@ -8,8 +9,10 @@ export const logo = Logo;
 
 export const categories = [
   { name: "Pewdiepie", icon: <VideoLibrary /> },
+  { name: "ONE OK ROCK", icon: <LibraryMusicIcon /> },
   { name: "ReactJS", icon: <CodeIcon /> },
   { name: "JS Mastery", icon: <CodeIcon /> },
+  { name: "Web Dev Simplified", icon: <CodeIcon /> },
   { name: "Qorygore Games", icon: <SportsEsportsIcon /> },
   { name: "InYourdreaM", icon: <SportsEsportsIcon /> },
   { name: "GadgetIn", icon: <DevicesOther /> },

@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import { SearchBar } from "./index.js";
@@ -7,7 +7,7 @@ import { logo } from "../utils/constants";
 
 const Navbar = () => (
   <Stack
-    direction="row"
+    direction={{ xs: "column", sm: "row" }}
     alignItems="center"
     p={2}
     sx={{
@@ -19,6 +19,14 @@ const Navbar = () => (
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
+      <Typography
+        color="white"
+        variant="h5"
+        fontWeight="bold"
+        marginLeft="10px"
+      >
+        I Tube
+      </Typography>
     </Link>
 
     <SearchBar />
